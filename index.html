@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Coding Quiz</title>
@@ -16,11 +16,16 @@
           <p id="time">Loading Time</p>
         </div>
       </div>
-
+      <h1>Coding Quiz Challenge</h1>
+      <p>
+        Try to answer the following code-related questions within the time
+        limit. keep in mind that incorrect answers will penalize your score/time
+        by ten seconds!
+      </p>
       <button id="startButton" onclick="startQuiz()">Start The Quiz</button>
 
       <div id="content">
-        <h2 id="question">Loading questions...</h2>
+        <h2 id="question">Questions</h2>
         <div id="buttonsContainer">
           <button id="answer1" onclick="answer(1)">Loading answer 1</button>
           <button id="answer2" onclick="answer(2)">Loading answer 2</button>
@@ -29,7 +34,7 @@
         </div>
         <!--This is the end screen-->
         <div id="endContainer">
-          <p id="score">Loading Score...</p>
+          <p id="score">Scores</p>
           <div id="submissionRow">
             <p>Enter initials:</p>
             <input id="input" type="text" />
