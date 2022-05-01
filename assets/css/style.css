@@ -73,3 +73,19 @@ p {
   background-color: black;
   cursor: pointer;
 }
+#endContainer {
+  display: none;
+}
+
+#submissionRow > button {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+}
+
+#submissionRow > button:hover {
+  background-color: black;
+  cursor: pointer;
+}

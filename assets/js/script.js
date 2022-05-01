@@ -58,6 +58,10 @@ function endGame() {
   document.getElementById("question").innerText = "All done!";
   document.getElementById("buttonsContainer").style.display = "none";
   document.getElementById("resultContainer").style.display = "none";
+  document.getElementById("endContainer").style.display = "block";
+  //load the score
+  document.getElementById("score").innerText =
+    "Your final score is " + timer + ".";
   clearInterval(timerIntervalId);
 }
 
@@ -137,7 +141,7 @@ function submitScore() {
 
   //this redirect might need improvement....
   //the local storage isn't saving between the pages on the same domain
-  window.location.href = "./scores.html";
+  window.location.href = "./highscores.html";
 }
 
 //load in the values for question 1 and timer

@@ -9,7 +9,7 @@
     <div id="container">
       <div id="topRow">
         <div id="left">
-          <a href="#">View High Score</a>
+          <a href="./highscores.html">View High Score</a>
         </div>
         <div id="right">
           <h3>Time:</h3>
@@ -26,6 +26,15 @@
           <button id="answer2" onclick="answer(2)">Loading answer 2</button>
           <button id="answer3" onclick="answer(3)">Loading answer 3</button>
           <button id="answer4" onclick="answer(4)">Loading answer 4</button>
+        </div>
+        <!--This is the end screen-->
+        <div id="endContainer">
+          <p id="score">Loading Score...</p>
+          <div id="submissionRow">
+            <p>Enter initials:</p>
+            <input id="input" type="text" />
+            <button id="submit" onclick="submitScore()">Submit</button>
+          </div>
         </div>
         <!--This is the question answer result-->
         <div id="resultContainer">
