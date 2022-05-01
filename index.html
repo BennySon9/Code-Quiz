@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="utf-8" />
     <title>Coding Quiz</title>
   </head>
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <body>
-    <header>
-      <a id="">View Highscores</a>
-      <time>Time: <span id="time"></span> </time>
-    </header>
-
-    <main>
-      <div class="card">
-        <h2>Coding Quiz Challenge</h2>
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. <br /><br />
-          Keep in mind that incorrect answers will penalize your score/time by
-          ten seconds!
-        </p>
-        <button id="start" class="button">Start Quiz</button>
+    <div id="container">
+      <div id="topRow">
+        <div id="left">
+          <a href="#">View High Score</a>
+        </div>
+        <div id="right">
+          <h3>Time:</h3>
+          <p id="time">Loading Time</p>
+        </div>
       </div>
 
-      <div></div>
-    </main>
+      <button id="startButton" onclick="startQuiz()">Start The Quiz</button>
+
+      <div id="content">
+        <h2 id="question">Loading questions...</h2>
+        <div id="buttonsContainer">
+          <button id="answer1" onclick="answer(1)">Loading answer 1</button>
+          <button id="answer2" onclick="answer(2)">Loading answer 2</button>
+          <button id="answer3" onclick="answer(3)">Loading answer 3</button>
+          <button id="answer4" onclick="answer(4)">Loading answer 4</button>
+        </div>
+        <!--This is the question answer result-->
+        <div id="resultContainer">
+          <h3 id="result">Awaiting Question Result</h3>
+        </div>
+      </div>
+    </div>
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
