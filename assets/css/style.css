@@ -1,0 +1,94 @@
+#container {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#topRow {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#left {
+  margin-right: auto;
+  padding-top: 2%;
+}
+
+#right {
+  margin-left: auto;
+}
+
+#right > h3,
+p {
+  display: inline-block;
+}
+
+#info {
+  margin-top: -10px;
+}
+
+#content {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: left;
+  display: none;
+}
+
+#buttonsContainer {
+  margin-top: 20px;
+  min-height: 200px;
+}
+
+#buttonsContainer > button {
+  display: block;
+  margin-top: 1.5em;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+}
+
+#buttonsContainer > button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+#resultContainer {
+  border-top: thin solid gray;
+}
+
+#startButton {
+  display: inline-block;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+}
+
+#startButton:hover {
+  background-color: black;
+  cursor: pointer;
+}
+#endContainer {
+  display: none;
+}
+
+#submissionRow > button {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+}
+
+#submissionRow > button:hover {
+  background-color: black;
+  cursor: pointer;
+}

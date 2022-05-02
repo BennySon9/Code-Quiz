@@ -1,0 +1,32 @@
+#container {
+  border: thin solid black;
+  box-shadow: 0 0 4px black;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10em;
+}
+
+#leaderboard {
+  width: 50%;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+#leaderboard > tbody > tr {
+  background-color: paleturquoise;
+}
+
+.button {
+  background-color: paleturquoise;
+  border: none;
+  font-size: 20px;
+  border: thin solid black;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}

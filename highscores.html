@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Coding Quiz Leaderboard</title>
+  </head>
+  <link rel="stylesheet" href="./assets/css/highscores.css" />
+  <body onload="loadScores()">
+    <div id="container">
+      <h1>High Scores</h1>
+      <table id="leaderboard">
+        <thead>
+          <tr>
+            <th>Initials - Score</th>
+          </tr>
+        </thead>
+
+        <tbody id="leaderboardBody"></tbody>
+      </table>
+      <button class="button" onclick="goBack()">Go Back</button>
+      <button class="button" onclick="clearScores()">Clear High Scores</button>
+    </div>
+    <script src="./assets/js/highscores.js"></script>
+  </body>
+</html>

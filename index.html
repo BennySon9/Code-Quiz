@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="utf-8" />
+    <title>Coding Quiz</title>
   </head>
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <body>
-    <link rel="stylesheet" href="./assets/js/script.js" />
+    <div id="container">
+      <div id="topRow">
+        <div id="left">
+          <a href="./highscores.html">View High Score</a>
+        </div>
+        <div id="right">
+          <h3>Time:</h3>
+          <p id="time">Loading Time</p>
+        </div>
+      </div>
+      <h1 id="title">Coding Quiz Challenge</h1>
+      <p id="info">
+        Try to answer the following code-related questions within the time
+        limit. keep in mind that incorrect answers will penalize your score/time
+        by ten seconds!
+      </p>
+      <button id="startButton" onclick="startQuiz()">Start The Quiz</button>
+
+      <div id="content">
+        <h2 id="question">Questions</h2>
+        <div id="buttonsContainer">
+          <button id="answer1" onclick="answer(1)">Loading answer 1</button>
+          <button id="answer2" onclick="answer(2)">Loading answer 2</button>
+          <button id="answer3" onclick="answer(3)">Loading answer 3</button>
+          <button id="answer4" onclick="answer(4)">Loading answer 4</button>
+        </div>
+        <!--This is the end screen-->
+        <div id="endContainer">
+          <p id="score">Scores</p>
+          <div id="submissionRow">
+            <p>Enter initials:</p>
+            <input id="input" type="text" />
+            <button id="submit" onclick="submitScore()">Submit</button>
+          </div>
+        </div>
+        <!--This is the question answer result-->
+        <div id="resultContainer">
+          <h3 id="result">Awaiting Question Result</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
