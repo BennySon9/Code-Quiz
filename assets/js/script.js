@@ -4,36 +4,44 @@ let timerIntervalId = -1;
 
 let questions = [
   {
-    text: "Question 1",
+    text: "Commonly used data types DO Not include:",
+    correctAnswer: 3,
+    answer1Text: "1. strings",
+    answer2Text: "2. booleans",
+    answer3Text: "3. alerts",
+    answer4Text: "4. numbers",
+  },
+  {
+    text: "The condition in an if / else statement is enclosed with ____.",
     correctAnswer: 2,
-    answer1Text: "answer 1",
-    answer2Text: "answer 2",
-    answer3Text: "answer 3",
-    answer4Text: "answer 4",
+    answer1Text: "1. quotes",
+    answer2Text: "2. curly brackets",
+    answer3Text: "3. parenthesis",
+    answer4Text: "4. square brackets",
   },
   {
-    text: "Question 2",
+    text: "Arrays in JavaScript can be used to store __.",
+    correctAnswer: 4,
+    answer1Text: "1. numbers and strings",
+    answer2Text: "2. other arrays",
+    answer3Text: "3. booleans",
+    answer4Text: "4. all of the above",
+  },
+  {
+    text: "String values must be enclosed within ____ when being assigned to variables.",
     correctAnswer: 3,
-    answer1Text: "answer 1",
-    answer2Text: "answer 2",
-    answer3Text: "answer 3",
-    answer4Text: "answer 4",
+    answer1Text: "1. commas",
+    answer2Text: "2. curly brackets",
+    answer3Text: "3. quotes",
+    answer4Text: "4. parenthesis",
   },
   {
-    text: "Question 3",
-    correctAnswer: 1,
-    answer1Text: "answer 1",
-    answer2Text: "answer 2",
-    answer3Text: "answer 3",
-    answer4Text: "answer 4",
-  },
-  {
-    text: "Question 4",
-    correctAnswer: 3,
-    answer1Text: "answer 1",
-    answer2Text: "answer 2",
-    answer3Text: "answer 3",
-    answer4Text: "answer 4",
+    text: "A very useful tool used during development and debugging for printing content to the debugger is:",
+    correctAnswer: 4,
+    answer1Text: "1. JavaScript",
+    answer2Text: "2. terminal/bash",
+    answer3Text: "3. for loops",
+    answer4Text: "4. console.log",
   },
 ];
 
@@ -42,6 +50,9 @@ function startQuiz() {
   //display the content
   document.getElementById("content").style.display = "block";
   document.getElementById("startButton").style.display = "none";
+  document.getElementById("title").style.display = "none";
+  document.getElementById("info").style.display = "none";
+
   timerIntervalId = setInterval(() => {
     timer--;
     document.getElementById("time").innerText = timer;
@@ -57,7 +68,6 @@ function startQuiz() {
 function endGame() {
   document.getElementById("question").innerText = "All done!";
   document.getElementById("buttonsContainer").style.display = "none";
-  document.getElementById("resultContainer").style.display = "none";
   document.getElementById("endContainer").style.display = "block";
   //load the score
   document.getElementById("score").innerText =
@@ -145,7 +155,7 @@ function submitScore() {
 }
 
 //load in the values for question 1 and timer
-document.getElementById("time").innerText = timer;
+document.getElementById("time").innerText = "0";
 document.getElementById("question").innerText = questions[0].text;
 document.getElementById("answer1").innerText = questions[0].answer1Text;
 document.getElementById("answer2").innerText = questions[0].answer2Text;

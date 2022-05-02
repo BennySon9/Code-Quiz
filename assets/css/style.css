@@ -28,6 +28,10 @@ p {
   display: inline-block;
 }
 
+#info {
+  margin-top: -10px;
+}
+
 #content {
   padding-left: 20%;
   padding-right: 20%;
