@@ -39,6 +39,19 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 
+### Links
+
+https://github.com/BennySon9/Code-Quiz
+
+![](assets/images/1.png)
+
+![](assets/images/2.png)
+
+![](assets/images/3.png)
+
+```
+
+
 ### Review
 
 You are required to submit the following for review:
@@ -50,3 +63,4 @@ You are required to submit the following for review:
 ---
 
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+```
